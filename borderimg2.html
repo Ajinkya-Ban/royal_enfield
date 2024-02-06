@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image Demo</title>
+    <style>
+        .box
+        {
+           width: 300px;
+            aspect-ratio: 1/1;
+
+            border: 30px solid #000;
+            margin: 100px auto;
+            border-image-source: url(imgs/border_images/rcjG8LqMi.gif);
+            border-image-slice: 40;
+            border-image-repeat: stretch;
+           border-image-outset: 20px;
+
+        }
+        .box p
+        {
+            padding: 10px;
+            text-align: justify;
+        }
+        .box img
+        {
+            width: 100%;
+            height: 100%;
+            border: 0px solid #000;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="imgs/border_images/blank.webp">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia magnam tempora, culpa pariatur, esse dolorem facere necessitatibus in quas fugiat voluptates ullam similique non illo voluptatem quia quisquam numquam dolor.
+        </p>
+    
+    </div>
+</body>
+</html>
