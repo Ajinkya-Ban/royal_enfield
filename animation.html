@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Demo</title>
+    <style>
+        .box
+        {
+            width: 200px;
+            aspect-ratio: 1/1;
+            border: 1px solid #000;
+            background-color: crimson;
+            animation-name: anni;
+            animation-duration: 5s;
+            /* animation-delay: 2s; */
+            animation-iteration-count: infinite;
+            position: relative;
+            animation-direction: alternate-reverse;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+        }
+
+        @keyframes anni{
+            /* from{
+                background-color: green;
+            }
+            to{
+                background-color: crimson;
+            } */
+            0%
+            {
+                background-color: green;
+                border-radius: 10%;
+                left: 0;
+                top: 0;
+            }
+            25%
+            {
+                background-color: black;
+                border-radius: 20%;
+                left: 300px;
+                top: 0;
+            }
+            50%
+            {
+                background-color: blueviolet;
+                border-radius: 30%;
+                left: 300px;
+                top: 300px;
+            }
+            75%
+            {
+                background-color: darkgoldenrod;
+                border-radius: 40%;
+                left: 0;
+                top: 300px;
+            }
+            100%
+            {
+                background-color: crimson;
+                border-radius: 50%;
+                left: 0;
+                top: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
