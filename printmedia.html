@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=.box, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        width: 80%;
+        min-height: 200px;
+        border: 4px solid #000;
+        margin: auto;
+        background-color: lightgoldenrodyellow;
+      }
+      .heading h2 {
+        font-family: cursive;
+        padding: 10px;
+        background-color: lightgreen;
+      }
+      .answer p {
+        padding: 10px;
+        text-align: justify;
+      }
+      .answer img
+      {
+        width: 400px;
+        height: 300px;
+      }
+
+      @media print {
+        .box {
+          background: none;
+        }
+        .heading h2 {
+          background: none;
+          color: red;
+          width: 90%;
+          margin: 10px auto;
+          border: 3px solid #000;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+        }
+        .answer img{
+
+            display: none;
+        }
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="css/print.css" media="print" /> -->
+  </head>
+  <body>
+    <div class="box">
+      <div class="heading">
+        <h2>What is css explain with example</h2>
+      </div>
+
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus
+          ducimus doloremque quaerat. Dolore inventore repellat laboriosam a
+          sapiente temporibus quas doloremque cum expedita deleniti beatae
+          nostrum porro, explicabo ab facilis qui sed accusamus eveniet
+          aspernatur neque blanditiis tempora excepturi ad corporis! Odio hic
+          provident, rem expedita sapiente error reprehenderit impedit et,
+          corrupti ipsa dolore, ab harum officia unde nesciunt esse laboriosam
+          pariatur minus! Perspiciatis nulla ipsa nesciunt autem laborum facilis
+          nostrum, neque incidunt exercitationem ipsum aspernatur, eius dolor
+          ipsam consequuntur ex quidem ullam odit voluptatibus. Pariatur
+          nesciunt obcaecati earum explicabo est, accusamus nihil distinctio.
+          Quam excepturi autem inventore ad?
+          <img src="imgs/bullet.webp">
+        </p>
+      </div>
+
+      <div class="heading">
+        <h2>What is html explain with some tags</h2>
+      </div>
+
+      <div class="answer">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus
+          ducimus doloremque quaerat. Dolore inventore repellat laboriosam a
+          sapiente temporibus quas doloremque cum expedita deleniti beatae
+          nostrum porro, explicabo ab facilis qui sed accusamus eveniet
+          aspernatur neque blanditiis tempora excepturi ad corporis! Odio hic
+          provident, rem expedita sapiente error reprehenderit impedit et,
+          corrupti ipsa dolore, ab harum officia unde nesciunt esse laboriosam
+          pariatur minus! Perspiciatis nulla ipsa nesciunt autem laborum facilis
+          nostrum, neque incidunt exercitationem ipsum aspernatur, eius dolor
+          ipsam consequuntur ex quidem ullam odit voluptatibus. Pariatur
+          nesciunt obcaecati earum explicabo est, accusamus nihil distinctio.
+          Quam excepturi autem inventore ad?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

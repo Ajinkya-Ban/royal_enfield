@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            width: 60%;
+            min-height: 200px;
+            border: 4px solid #000;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .b1
+        {
+            width: 45%;
+            min-height: 100px;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            background-color: royalblue;
+        }
+        .b1 img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .b2
+        {
+            width: 45%;
+            min-height: 100px;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (max-width: 768px)
+        {
+            .box
+            {
+                flex-direction: column;
+            }
+            .b1
+            {
+                background-color: lightgreen;
+            }
+            .b1 img
+            {
+                width: 100%;
+                height:auto;
+            }
+            .b2{
+                background-color: purple;
+                color: white;
+            }
+
+        }
+
+        @media only screen and (max-width: 560px)
+        {
+            .b1
+            {
+                background-color: crimson;
+            }
+            .b1 img
+            {
+                width: 100%;
+                height: auto;
+            }
+            .b2{
+                background-color: lightyellow;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="b1">
+          <img src="imgs/bullet2.jpg">
+        </div>
+
+        <div class="b2">
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eum numquam, corporis nostrum accusantium quisquam, totam fugiat alias, aut facilis voluptas tempora ratione eos magni? Praesentium molestiae quia vero doloremque veniam distinctio expedita reprehenderit, necessitatibus eligendi incidunt? Similique nulla perferendis quam libero maiores odit aspernatur repudiandae esse, labore quae ut perspiciatis obcaecati iure ea pariatur deleniti accusamus sint quo! Perspiciatis dicta officia eveniet? Fugit assumenda velit dolorem culpa quaerat ipsum excepturi nemo aliquam aut, similique atque dignissimos. Deserunt quaerat in eaque voluptates esse, molestias perspiciatis soluta quo possimus, maiores odit laudantium tempore sint placeat explicabo incidunt autem non temporibus odio.
+           </p>
+        </div>
+    </div>
+</body>
+</html>
